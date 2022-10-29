@@ -12,7 +12,7 @@ export default function Home({ product }: any) {
 }
 
 export async function getServerSideProps(context: any) {
-  const res = await fetch("http://localhost:3000/product.json");
+  const res = await fetch("http://research-seo.netlify.app/product.json");
   const data = await res.json();
 
   return {
